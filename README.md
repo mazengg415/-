@@ -1,16 +1,16 @@
 # FiveM Police Operations Portal
 
-## تشغيل
+## التشغيل
+
+لم يعد الموقع يحتاج إلى اسم مستخدم أو كلمة مرور. يفتح مباشرة عند تشغيله.
 
 ```bash
 npm install
-cp .env.example .env
-# غيّر ADMIN_PASSWORD
 npm start
 ```
 
-افتح `http://localhost:3000`.
+ثم افتح `http://localhost:3000`.
 
-المميزات: SQLite، لوحة تحكم، حضور الضباط، الرتب الإنجليزية من Cadet إلى Chief of Police، تقارير، warrants، dispatch، rules، applications، Discord webhook، وواجهة FiveM محمية بمفتاح `x-fivem-key` عبر `GET /api/fivem/officers`.
+المميزات: SQLite، لوحة تحكم، حضور الضباط، الرتب الإنجليزية من Cadet إلى Chief of Police، تقارير، warrants، dispatch، rules، applications، وDiscord webhook.
 
-لإضافة بوت Discord حقيقي، أضف Discord.js إلى المشروع واربط أوامر slash بنفس API؛ حالياً يتم إرسال إشعارات الأحداث عبر `DISCORD_WEBHOOK_URL`.
+واجهة FiveM محمية بمفتاح `x-fivem-key` عبر `GET /api/fivem/officers`. لا تشارك هذا المفتاح مع المستخدمين.
